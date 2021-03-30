@@ -32,8 +32,13 @@ class Object {
     this.x += velocity;
     velocity += acceleration;
 
-    if (velocity <= 0) {
-      console.log(this.x);
+    let d = new Date();
+    let t = d.getSeconds();
+    //console.log(t, this.x);
+
+    if (this.x < 0 || this.x + this.width > 800) {
+      velocity = -velocity;
+      acceleration = -acceleration;
     }
   }
 
