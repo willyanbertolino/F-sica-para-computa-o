@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lançamento</title>
+  </head>
+  <body>
+    <div class="enters">
+      <div class="inputs">
+        <div>
+          <label for="velocity">Velocidade inicial</label>
+          <input
+            type="number"
+            id="velocity"
+            value="0"
+            min="3"
+            max="10"
+            step="0.1"
+          />
+        </div>
+        <div>
+          <label for="angle">Angulo</label>
+          <input type="number" id="angle" value="0" disabled />
+        </div>
+      </div>
+      <canvas></canvas>
+    </div>
+    <script src="canvas.js"></script>
+  </body>
+</html>
